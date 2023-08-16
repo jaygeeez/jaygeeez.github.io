@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Web API Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <script src="js/api.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+  <div id="tokenSection" class="center">
+    <h1>How Well Do You Know <span class="green">Your</span> Music?</h1>
+    <div id="startButton" onclick="requestAuthorization()">
+      <h3>Connect to Spotify</h3>
+    </div>
+  </div>
+  <div id="deviceSection">
+    <div id="score"></div>
+    <div id="song_text"></div>
+    <div class="grid2x2">
+      <div id="option_1" onclick="callQuestion(this.id)"></div>
+      <div id="option_2" onclick="callQuestion(this.id)"></div>
+      <div id="option_3" onclick="callQuestion(this.id)"></div>
+      <div id="option_4" onclick="callQuestion(this.id)"></div>
+    </div>
+  </div>
+</body>
+
+</html>
