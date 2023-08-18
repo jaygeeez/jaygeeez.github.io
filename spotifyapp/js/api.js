@@ -1,5 +1,6 @@
 // var redirect_uri = "https://makeratplay.github.io/SpotifyWebAPI/"; // change this your value
-var redirect_uri = "http://127.0.0.1:5500";
+// var redirect_uri = "http://127.0.0.1:5500";
+var redirect_uri = "https://jaygeeez.github.io/spotifyapp/index";
 
 var client_id = "b0967dcab86e44698289a22765cf49dc";
 var client_secret = "14aa4e5fce0443a4a4bca54c5ba51ba2"; // In a real app you should not expose your client_secret to the user
