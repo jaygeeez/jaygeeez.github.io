@@ -158,7 +158,7 @@ function callQuestion(id = "option_1") {
   if (document.getElementById(id).innerHTML == correct_artist) {
     score += 1;
   }
-  fetch("https://api.spotify.com/v1/me/tracks?market=CA&limit=50", {
+  fetch("https://api.spotify.com/v1/me/tracks?limit=50", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + access_token,
