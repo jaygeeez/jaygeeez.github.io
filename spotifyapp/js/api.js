@@ -1,6 +1,6 @@
 // var redirect_uri = "https://makeratplay.github.io/SpotifyWebAPI/"; // change this your value
-// var redirect_uri = "http://127.0.0.1:5500";
-var redirect_uri = "https://jaygeeez.github.io/spotifyapp/index";
+var redirect_uri = "http://127.0.0.1:5500";
+// var redirect_uri = "https://jaygeeez.github.io/spotifyapp/index";
 
 var client_id = "b0967dcab86e44698289a22765cf49dc";
 var client_secret = "14aa4e5fce0443a4a4bca54c5ba51ba2"; // In a real app you should not expose your client_secret to the user
@@ -152,12 +152,22 @@ function shuffle(array) {
 }
 
 var correct_artist;
+var correct_album;
+var correct_song;
 var score = 0;
 
 function callQuestion(id = "option_1") {
-  if (document.getElementById(id).innerHTML == correct_artist) {
+  if (
+    document.getElementById(id).innerHTML == correct_artist ||
+    document.getElementById(id).innerHTML == correct_album ||
+    document.getElementById(id).innerHTML == correct_song
+  ) {
     score += 1;
   }
+  question1();
+}
+
+function question1() {
   fetch("https://api.spotify.com/v1/me/tracks?limit=50", {
     method: "GET",
     headers: {
