@@ -1,5 +1,4 @@
 // var redirect_uri = "https://makeratplay.github.io/SpotifyWebAPI/"; // change this your value
-
 var redirect_uri = "https://jaygeeez.github.io/spotifyapp/index";
 
 var client_id = "b0967dcab86e44698289a22765cf49dc";
