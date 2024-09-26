@@ -1,73 +1,75 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 200;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents Scrolling */
 }
 
 .level {
-    background-color: blue;
-    float: left;
+  background-color: blue;
+  float: left;
 }
 
 nav ul {
-    display: block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-    top: 0;
-    font-size: 20px;
-    width: 100%;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+  font-size: 20px;
+  width: 100%;
 }
 
 nav li:first-child {
-    float: left;
-    padding-left: 10px;
+  float: left;
+  padding-left: 10px;
 }
 
 nav li {
-    float: right;
+  float: right;
 }
 
 nav li p {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 15px;
-    text-decoration: none;
-}  
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
 
 canvas {
-    background-position: center;
-    margin: 2% auto;
-    display: block;
+  background-position: center;
+  margin: 2% auto;
+  display: block;
 }
 
 main {
-    display: flex;
-    position: fixed;
-    top: 20%;
-    right: 0;
-    flex-wrap: wrap;
-    width: 200px;
+  display: flex;
+  position: fixed;
+  top: 20%;
+  right: 0;
+  flex-wrap: wrap;
+  width: 200px;
 }
 
-h4, p {
-    padding: 0;
-    margin: 0;
+h4,
+p {
+  padding: 0;
+  margin: 0;
 }
 
 div {
-    border: 2px solid grey;
-    margin: 10px;
-    text-align: center;
+  border: 2px solid grey;
+  margin: 10px;
+  text-align: center;
 }
 
- div:hover {
-    background-color: lightgrey;
-    box-shadow: 5px 5px 10px #888888;
-    cursor: pointer;
+div:hover {
+  background-color: lightgrey;
+  box-shadow: 5px 5px 10px #888888;
+  cursor: pointer;
 }
