@@ -1,2 +1,3 @@
 # spotifyapp
-not sure yet
+
+a simple quiz game using Spotify API.
