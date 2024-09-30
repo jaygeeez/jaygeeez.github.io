@@ -1,17 +1,17 @@
 ::selection {
-    background: rgb(118, 136, 250);
-  }
+  background: rgb(118, 136, 250);
+}
 
-  /* Dark Mode */
+/* Dark Mode */
 .dark-mode {
-    background-color: #707070;
-    color: white;
-  }
+  background-color: #121212;
+  color: rgb(231, 231, 231);
+}
 
 .darktoggle {
-    width: 60px;
-    height: 34px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
