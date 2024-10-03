@@ -56,8 +56,10 @@ a:active {
   text-decoration: none;
 }
 
+/*on hover for the links */
 a:hover {
   color: grey;
+  padding: 20px;
 }
 
 .activelink {
