@@ -2,17 +2,20 @@
 
 html,
 body {
+  /* Google font */
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: x-large;
+
+  /* Prevents Scrolling */
+  overflow: hidden;
+
   background-color: aliceblue;
   color: black;
   margin: 0;
   padding: 0;
   height: 100%;
   box-sizing: border-box;
-  /* Prevents Scrolling */
-  overflow: hidden;
 }
 
 /* Box fix */

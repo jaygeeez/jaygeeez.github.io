@@ -4,6 +4,10 @@ var redirect_uri = "https://jaygeeez.github.io/spotifyapp/index";
 var client_id = "b0967dcab86e44698289a22765cf49dc";
 var client_secret = "14aa4e5fce0443a4a4bca54c5ba51ba2";
 
+// curl -X POST "https://accounts.spotify.com/api/token" \
+//      -H "Content-Type: application/x-www-form-urlencoded" \
+//      -d "grant_type=client_credentials&client_id=b0967dcab86e44698289a22765cf49dc&client_secret=14aa4e5fce0443a4a4bca54c5ba51ba2"
+
 var access_token = null;
 var refresh_token = null;
 
