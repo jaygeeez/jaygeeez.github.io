@@ -5,5 +5,5 @@ function playAudio() {
   piano1.play();
   setTimeout(() => {
     piano1.pause();
-  }, 2500);
+  }, 6000);
 }
