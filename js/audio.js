@@ -1,3 +1,4 @@
+// try randomizing or having audio different based on light or dark
 function playAudio() {
   var piano1 = new Audio();
   piano1.src = "audio/piano1.wav";
