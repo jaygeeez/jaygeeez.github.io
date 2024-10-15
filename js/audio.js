@@ -7,18 +7,12 @@ piano1.src = "audio/piano1.wav";
 var piano3 = new Audio();
 piano3.src = "audio/piano3.wav";
 
-function audioChoice(song) {
-  song.play();
-  // setTimeout(() => {
-  //   song.pause();
-  // }, 6000);
-}
 function playAudio() {
   if (dark_mode) {
-    audioChoice(piano3);
+    piano3.play();
     dark_mode = false;
   } else {
-    audioChoice(piano1);
+    piano1.play();
     dark_mode = true;
   }
 }
