@@ -1,18 +1,21 @@
 var dark_mode = true;
-
-// Need to shorten the audio clips
-var piano1 = new Audio();
-piano1.src = "audio/piano1.wav";
-
+var piano1 = new Audio(); // Need to shorten the audio clips
 var piano3 = new Audio();
-piano3.src = "audio/piano3.wav";
+
+piano1.src = "audio/piano1-1.wav";
+piano3.src = "audio/piano3-1.wav";
 
 function playAudio() {
   if (dark_mode) {
     piano3.play();
-    dark_mode = false;
+    setTimeout(() => {
+      piano3.pause();
+    }, 5000);
   } else {
     piano1.play();
-    dark_mode = true;
+    setTimeout(() => {
+      piano1.pause();
+    }, 5000);
   }
+  dark_mode = !dark_mode;
 }
