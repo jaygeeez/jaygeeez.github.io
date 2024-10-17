@@ -16,7 +16,7 @@ function playAudio() {
   if (dark_mode) {
     audioChoice(piano3);
   } else {
-    audioChoice(piano3);
+    audioChoice(piano1);
   }
   dark_mode = !dark_mode;
 }
