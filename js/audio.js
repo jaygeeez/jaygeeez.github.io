@@ -1,5 +1,5 @@
 var dark_mode = true;
-var piano1 = new Audio(); // Need to shorten the audio clips
+var piano1 = new Audio();
 var piano3 = new Audio();
 
 piano1.src = "audio/piano1-1.wav";
